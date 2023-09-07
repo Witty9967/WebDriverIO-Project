@@ -62,7 +62,7 @@ npm install @wdio/allure-reporter --save-dev
 # Step 3 - Run test and check Allure Results folder is generated
 
 # Step 4 - Install allure command line tool  
-npm install -g allure-commandline --save-dev
+sudo npm install -g allure-commandline --save-dev
 
 # Step 5 - Run commands
 allure generate allure-results // this will generate allure-report folder
