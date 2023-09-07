@@ -47,20 +47,24 @@ describe('Demo Tests', () => {
 // $()  Single dollar sign to find a single web element
 // $$()  Double dollar sign to find multiple web elements
 ```
+
 ### How to Generate and View Reports
 
-```javascript
-// Step 1 
-Run - npm install @wdio/allure-reporter --save-dev
+```sh
+# Step 1 Run 
+npm install @wdio/allure-reporter --save-dev
 
-// Step 2  Add reporter config in wdio.conf.js
+# Step 2  Add reporter config in wdio.conf.js
+    reporters: [['allure', {
+        outputDir: 'allure-results',
+    }]],
 
-// Step 3 - Run test and check Allure Results folder is generated
+# Step 3 - Run test and check Allure Results folder is generated
 
-// Step 4 - Install allure command line tool  
+# Step 4 - Install allure command line tool  
 npm install -g allure-commandline --save-dev
 
-// Step 5 - Run commands
+# Step 5 - Run commands
 allure generate allure-results // this will generate allure-report folder
 allure open     // will start server and open report
 ```
