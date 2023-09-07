@@ -58,9 +58,13 @@ npm install @wdio/allure-reporter --save-dev
 
 ```javascript
 // Step 2  Add reporter config in wdio.conf.js
+export const config = {
+    // ...
     reporters: [['allure', {
         outputDir: 'allure-results',
-    }]]
+    }]],
+    // ...
+}
 ```
 
 ```sh
