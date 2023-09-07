@@ -6,7 +6,7 @@ describe('Demo Tests', function(){
         await $('[name="btnK"]').waitForClickable();
         await $('[name="btnK"]').click()
 
-        browser.pause(2000)
+        await browser.pause(2000)
     })
 })
 // describe('Demo Tests', function(){
