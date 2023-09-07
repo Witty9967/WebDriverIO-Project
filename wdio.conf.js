@@ -1,4 +1,4 @@
-exports.config = {
+export const config = {
     //
     // ====================
     // Runner Configuration
@@ -31,7 +31,6 @@ exports.config = {
     //
     // ============
     // Capabilities
-
     // ============
     // Define your capabilities here. WebdriverIO can run multiple capabilities at the same
     // time. Depending on the number of capabilities, WebdriverIO launches several test
@@ -53,15 +52,7 @@ exports.config = {
     //
     capabilities: [{
         // capabilities for local browser web tests
-        browserName: 'chrome', // or "firefox", "microsoftedge", "safari"
-        browserVersion: '116',
-        // proxy: {
-        //     proxyType: "manual",
-        //     httpProxy: "ndss-server.99.com:50587",
-        //     // socksUsername: "codeceptjs",
-        //     // socksPassword: "996767",
-        //     noProxy: "127.0.0.1,localhost"
-        // }
+        browserName: 'chrome' // or "firefox", "microsoftedge", "safari"
     }],
 
     //
@@ -134,7 +125,7 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
-    
+
     
     //
     // Options to be passed to Mocha.
