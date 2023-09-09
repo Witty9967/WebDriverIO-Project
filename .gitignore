@@ -3,4 +3,5 @@ package.json
 package-lock.json
 wdio.conf.js
 allure-results
+.DS_Store
 
